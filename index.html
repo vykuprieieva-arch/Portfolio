@@ -6,69 +6,86 @@
     <meta name="description" content="Головна сторінка персонального портфоліо Віолетти Купрєєвої, майбутнього frontend-розробника.">
     <meta name="author" content="Віолетта Купрєєва">
     <title>Головна — Портфоліо Віолетти Купрєєвої</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Портфоліо Віолетти Купрєєвої</h1>
-        <nav aria-label="Основна навігація">
-            <ul>
-                <li><a href="index.html" aria-current="page">Головна</a></li>
-                <li><a href="about.html">Про мене</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-            </ul>
-        </nav>
+<body id="top" class="site-body">
+    <header id="site-header" class="site-header">
+        <div class="content-shell">
+            <h1>Портфоліо Віолетти Купрєєвої</h1>
+            <nav aria-label="Основна навігація">
+                <ul class="nav-menu">
+                    <li><a href="index.html" aria-current="page">Головна</a></li>
+                    <li><a href="about.html">Про мене</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Вітаю на моєму сайті</h2>
-            <article>
-                <h3>Коротко про мене</h3>
-                <p><strong>Вітаю!</strong> Я Віолетта Купрєєва — студентка 3 курсу та <em>майбутній frontend-розробник</em>. Я вивчаю HTML, семантичну розмітку та принципи створення зрозумілих веб-сторінок.</p>
-                <p>Мені цікаво поєднувати технічні знання зі знаннями про поведінку користувача, щоб створювати зручні та логічно структуровані інтерфейси.</p>
-            </article>
+    <main class="page-main">
+        <div class="content-shell">
+            <section id="hero" class="content-section">
+                <div class="info-card">
+                    <h2 class="section-title">Вітаю на моєму сайті</h2>
+                    <article>
+                        <h3>Коротко про мене</h3>
+                        <p><strong>Вітаю!</strong> Я Віолетта Купрєєва — студентка 3 курсу та <em>майбутній frontend-розробник</em>. Я вивчаю HTML, семантичну розмітку та принципи створення зрозумілих веб-сторінок.</p>
+                        <p>Мені цікаво поєднувати технічні знання зі знаннями про поведінку користувача, щоб створювати зручні та логічно структуровані інтерфейси.</p>
+                    </article>
 
-            <blockquote>
-                <p>«Якісна структура — основа зрозумілого інтерфейсу.»</p>
-            </blockquote>
-        </section>
+                    <blockquote>
+                        <p>«Якісна структура — основа зрозумілого інтерфейсу.»</p>
+                    </blockquote>
+                </div>
 
-        <section>
-            <h2>Мої цілі</h2>
-            <ol>
-                <li>Опанувати HTML5 та семантичні елементи.</li>
-                <li>Навчитися правильно структурувати багатосторінкові сайти.</li>
-                <li>Розвивати навички роботи з Git та GitHub.</li>
-            </ol>
-        </section>
+                <figure class="media-card">
+                    <span class="media-badge">Профіль</span>
+                    <div class="media-placeholder media-placeholder--portrait" aria-label="Місце для фото профілю">
+                        Фото Віолетти Купрєєвої
+                    </div>
+                    <figcaption class="media-overlay">Моє фото для персонального портфоліо</figcaption>
+                </figure>
+            </section>
 
-        <section>
-            <h2>Фото профілю</h2>
-            <figure>
-                <img src="images/photo.jpg" alt="Фото Віолетти Купрєєвої" width="300">
-                <figcaption>Моє фото для персонального портфоліо</figcaption>
-            </figure>
-        </section>
+            <section class="content-section">
+                <div class="info-card">
+                    <h2 class="section-title">Мої цілі</h2>
+                    <ol>
+                        <li>Опанувати HTML5 та семантичні елементи.</li>
+                        <li>Навчитися правильно структурувати багатосторінкові сайти.</li>
+                        <li>Розвивати навички роботи з Git та GitHub.</li>
+                    </ol>
+                </div>
+            </section>
 
-        <section>
-            <h2>Відео-презентація</h2>
-            <figure>
-                <video controls width="480">
-                    <source src="video/intro.mp4" type="video/mp4">
-                    Ваш браузер не підтримує відео.
-                </video>
-                <figcaption>Невелика відео-презентація про мене</figcaption>
-            </figure>
-        </section>
+            <section class="content-section">
+                <div class="info-card media-card">
+                    <h2 class="section-title">Відео-презентація</h2>
+                    <figure>
+                        <div class="media-placeholder media-placeholder--wide" aria-label="Місце для відео-презентації">
+                            Відео-презентація буде додана пізніше
+                        </div>
+                        <figcaption>Невелика відео-презентація про мене</figcaption>
+                    </figure>
+                </div>
+            </section>
 
-        <aside>
-            <h2>Цікавий факт</h2>
-            <p>Мене особливо цікавить психологія користувача та те, як структура сторінки впливає на сприйняття інформації.</p>
-        </aside>
+            <aside class="side-note">
+                <h2 class="section-title">Цікавий факт</h2>
+                <p>Мене особливо цікавить психологія користувача та те, як структура сторінки впливає на сприйняття інформації.</p>
+            </aside>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Віолетта Купрєєва. Всі права захищені.</p>
+    <footer class="site-footer">
+        <div class="content-shell">
+            <p>&copy; 2026 Віолетта Купрєєва. Всі права захищені.</p>
+        </div>
     </footer>
+
+    <a class="back-to-top" href="#top" aria-label="Повернутися нагору">↑</a>
 </body>
 </html>
