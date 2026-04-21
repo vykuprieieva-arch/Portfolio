@@ -12,115 +12,208 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top" class="site-body">
-    <header id="site-header" class="site-header">
-        <div class="content-shell">
-            <h1>Портфоліо Віолетти Купрєєвої</h1>
-            <nav aria-label="Основна навігація">
-                <ul class="nav-menu">
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="about.html">Про мене</a></li>
-                    <li><a href="contacts.html" aria-current="page">Контакти</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="page">
+        <header class="site-header">
+            <div class="container site-header__inner">
+                <a class="site-brand" href="index.html" aria-label="На головну сторінку портфоліо">
+                    <span class="site-brand__title">Віолетта Купрєєва</span>
+                    <span class="site-brand__subtitle">Контакти • форма зворотного зв'язку • співпраця</span>
+                </a>
 
-    <main class="page-main">
-        <div class="content-shell">
-            <section id="contact-section" class="content-section">
-                <h2 class="section-title">Контактна інформація</h2>
-                <div class="contact-list">
-                    <article class="info-card">
-                        <h3>Основні контакти</h3>
-                        <p>Email: <a href="mailto:violetta@example.com">violetta@example.com</a></p>
-                        <p>Телефон: <a href="tel:+380991234567">+38 (099) 123-45-67</a></p>
-                    </article>
+                <nav class="nav" aria-label="Основна навігація">
+                    <input type="checkbox" id="menu-toggle-contacts" class="menu-toggle">
+                    <label for="menu-toggle-contacts" class="hamburger" aria-label="Відкрити або закрити меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
 
-                    <article class="info-card">
-                        <h3>Зручний формат зв'язку</h3>
-                        <p>Найкраще писати мені на електронну пошту або через форму на цій сторінці.</p>
-                    </article>
-                </div>
-            </section>
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="index.html">Головна</a></li>
+                        <li><a class="nav-link" href="about.html">Про мене</a></li>
+                        <li><a class="nav-link" href="contacts.html" aria-current="page">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-            <section class="content-section">
-                <h2 class="section-title">Форма зворотного зв'язку</h2>
-                <p>Будь ласка, заповніть усі обов'язкові поля форми, щоб я могла швидше відповісти на ваше повідомлення.</p>
-                <form action="#" method="post" class="contact-form">
-                    <fieldset class="form-group">
-                        <legend>Ваші дані</legend>
+        <main class="page-main">
+            <div class="page-main__inner">
+                <section class="hero">
+                    <article class="hero__content">
+                        <p class="hero__eyebrow">Зв'язок зі мною</p>
+                        <h1 class="hero__title">Відкрита до спілкування, навчальних проєктів і нових ідей</h1>
+                        <p class="hero__text">
+                            Якщо у вас є запитання, пропозиція або бажання обговорити навчальний чи майбутній
+                            робочий проєкт, скористайтеся контактною інформацією або формою нижче.
+                            Сторінка побудована з урахуванням адаптивності, доступності та зручної структури контенту.
+                        </p>
 
-                        <div class="input-row">
-                            <label for="name">Ім'я:</label>
-                            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                        <div class="hero__actions">
+                            <a class="button" href="#contact-form">Заповнити форму</a>
+                            <a class="button button--ghost" href="mailto:violetta@example.com">Написати на email</a>
                         </div>
 
-                        <div class="input-row">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="form-group">
-                        <legend>Повідомлення</legend>
-
-                        <div class="input-row">
-                            <label for="subject">Тема:</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">-- Оберіть тему --</option>
-                                <option value="general">Загальне питання</option>
-                                <option value="cooperation">Співпраця</option>
-                                <option value="feedback">Відгук</option>
-                            </select>
-                        </div>
-
-                        <div class="input-row">
-                            <p>Тип звернення:</p>
-                            <div class="choice-group">
-                                <label>
-                                    <input type="radio" name="type" value="question" required>
-                                    Питання
-                                </label>
-                                <label>
-                                    <input type="radio" name="type" value="suggestion">
-                                    Пропозиція
-                                </label>
-                                <label>
-                                    <input type="radio" name="type" value="complaint">
-                                    Скарга
-                                </label>
+                        <div class="hero__stats" aria-label="Коротка контактна інформація">
+                            <div class="stat-card">
+                                <strong>Email</strong>
+                                <span>violetta@example.com</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>Телефон</strong>
+                                <span>+38 (099) 123-45-67</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>Формат</strong>
+                                <span>Навчальні проєкти та зворотний зв'язок</span>
                             </div>
                         </div>
+                    </article>
 
-                        <div class="input-row">
-                            <label for="message">Повідомлення:</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Ваше повідомлення" required></textarea>
-                        </div>
-                    </fieldset>
+                    <aside class="hero__media" aria-label="Візуальний блок контактної сторінки">
+                        <figure class="profile-figure">
+                            <img src="https://placehold.co/800x1000/dbeafe/1e293b?text=Contacts" alt="Стилізоване зображення для сторінки контактів портфоліо">
+                            <figcaption class="figure-caption">Контактна сторінка з адаптивним макетом, формою та інформаційними блоками.</figcaption>
+                        </figure>
 
-                    <div class="input-row consent-row">
-                        <label>
-                            <input type="checkbox" name="consent" required>
-                            Я погоджуюсь на обробку персональних даних
-                        </label>
+                        <blockquote class="quote">
+                            «Зручна комунікація починається з чіткої структури, зрозумілих дій і доступної форми зв'язку».
+                        </blockquote>
+                    </aside>
+                </section>
+
+                <section class="section" aria-labelledby="contact-info-title">
+                    <div>
+                        <p class="section__eyebrow">Контактна інформація</p>
+                        <h2 class="section-title" id="contact-info-title">Як зі мною зв'язатися</h2>
+                        <p class="section__text">
+                            Оберіть найзручніший спосіб комунікації. Усі блоки адаптуються до різних
+                            розмірів екрана та коректно перебудовуються без втрати читабельності.
+                        </p>
                     </div>
 
-                    <button type="submit" class="primary-button">Надіслати</button>
-                </form>
-            </section>
+                    <div class="contact-grid">
+                        <article class="contact-card">
+                            <h3>Основні контакти</h3>
+                            <p>Email: <a href="mailto:violetta@example.com">violetta@example.com</a></p>
+                            <p>Телефон: <a href="tel:+380991234567">+38 (099) 123-45-67</a></p>
+                        </article>
 
-            <aside class="side-note">
-                <h2 class="section-title">Додатково</h2>
-                <p>Я відкрита до навчальних проєктів, обговорення ідей та майбутньої співпраці.</p>
-            </aside>
-        </div>
-    </main>
+                        <article class="contact-card">
+                            <h3>Зручний формат зв'язку</h3>
+                            <p>Найкраще написати мені на електронну пошту або скористатися формою нижче, щоб коротко описати тему звернення.</p>
+                        </article>
+                    </div>
+                </section>
 
-    <footer class="site-footer">
-        <div class="content-shell">
-            <p>&copy; 2026 Віолетта Купрєєва. Всі права захищені.</p>
-        </div>
-    </footer>
+                <section class="section section--accent" id="contact-form" aria-labelledby="form-title">
+                    <div>
+                        <p class="section__eyebrow">Форма</p>
+                        <h2 class="section-title" id="form-title">Форма зворотного зв'язку</h2>
+                        <p class="section__text">
+                            Заповніть обов'язкові поля, і я зможу швидше зорієнтуватися у вашому зверненні.
+                        </p>
+                    </div>
+
+                    <form action="#" method="post" class="contact-form">
+                        <fieldset class="form-group">
+                            <legend>Ваші дані</legend>
+
+                            <div class="input-row">
+                                <label for="name">Ім'я:</label>
+                                <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                            </div>
+
+                            <div class="input-row">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <legend>Повідомлення</legend>
+
+                            <div class="input-row">
+                                <label for="subject">Тема:</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">-- Оберіть тему --</option>
+                                    <option value="general">Загальне питання</option>
+                                    <option value="cooperation">Співпраця</option>
+                                    <option value="feedback">Відгук</option>
+                                </select>
+                            </div>
+
+                            <div class="input-row">
+                                <p>Тип звернення:</p>
+                                <div class="choice-group">
+                                    <label>
+                                        <input type="radio" name="type" value="question" required>
+                                        Питання
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="type" value="suggestion">
+                                        Пропозиція
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="type" value="complaint">
+                                        Скарга
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="input-row">
+                                <label for="message">Повідомлення:</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Ваше повідомлення" required></textarea>
+                            </div>
+                        </fieldset>
+
+                        <div class="input-row consent-row">
+                            <label>
+                                <input type="checkbox" name="consent" required>
+                                Я погоджуюсь на обробку персональних даних
+                            </label>
+                        </div>
+
+                        <button type="submit" class="button">Надіслати</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <aside class="page-sidebar">
+            <div class="page-sidebar__inner">
+                <section class="sidebar-card" aria-labelledby="contacts-sidebar-note">
+                    <h2 class="sidebar-card__title" id="contacts-sidebar-note">Додатково</h2>
+                    <p>Я відкрита до навчальних проєктів, обговорення ідей, розвитку портфоліо та майбутньої співпраці.</p>
+                </section>
+
+                <section class="sidebar-card" aria-labelledby="contacts-sidebar-time">
+                    <h2 class="sidebar-card__title" id="contacts-sidebar-time">Що можна написати</h2>
+                    <ul class="skill-list">
+                        <li>Запитання щодо портфоліо</li>
+                        <li>Відгук про структуру сайту</li>
+                        <li>Пропозиції для навчальних робіт</li>
+                        <li>Ідеї для майбутніх проєктів</li>
+                    </ul>
+                </section>
+
+                <section class="sidebar-card" aria-labelledby="contacts-sidebar-links">
+                    <h2 class="sidebar-card__title" id="contacts-sidebar-links">Швидкі переходи</h2>
+                    <ul>
+                        <li><a class="nav-link" href="index.html">Повернутися на головну</a></li>
+                        <li><a class="nav-link" href="about.html">Детальніше про мене</a></li>
+                        <li><a class="nav-link" href="#contact-form">Перейти до форми</a></li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
+
+        <footer class="site-footer">
+            <div class="container site-footer__inner">
+                <p>&copy; 2026 Віолетта Купрєєва. Контактна сторінка адаптивного портфоліо.</p>
+            </div>
+        </footer>
+    </div>
 
     <a href="#top" class="back-to-top" aria-label="Повернутися нагору">↑</a>
 </body>

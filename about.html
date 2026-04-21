@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Сторінка з детальною інформацією про Віолетту Купрєєву, її освіту, навички та інтереси.">
+    <meta name="description" content="Сторінка про Віолетту Купрєєву: освіта, навички, інтереси, факти та приклади навчального розвитку у frontend.">
     <meta name="author" content="Віолетта Купрєєва">
     <title>Про мене — Портфоліо Віолетти Купрєєвої</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,55 +12,101 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top" class="site-body">
-    <header id="site-header" class="site-header">
-        <div class="content-shell">
-            <h1>Портфоліо Віолетти Купрєєвої</h1>
-            <nav aria-label="Основна навігація">
-                <ul class="nav-menu">
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="about.html" aria-current="page">Про мене</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="page">
+        <header class="site-header">
+            <div class="container site-header__inner">
+                <a class="site-brand" href="index.html" aria-label="На головну сторінку портфоліо">
+                    <span class="site-brand__title">Віолетта Купрєєва</span>
+                    <span class="site-brand__subtitle">Про мене • навчання • розвиток</span>
+                </a>
 
-    <main class="page-main">
-        <div class="content-shell">
-            <section id="hero" class="content-section">
-                <div class="info-card">
-                    <h2 class="section-title">Про мене</h2>
-                    <p>Мене звати Віолетта. Я студентка 3 курсу спеціальності «Психологія», а також поступово розвиваюся у сфері frontend-розробки.</p>
-                    <p>Мені цікаво створювати веб-сторінки, продумувати їхню структуру та робити інформацію на сайті зручною для сприйняття.</p>
-                </div>
+                <nav class="nav" aria-label="Основна навігація">
+                    <input type="checkbox" id="menu-toggle-about" class="menu-toggle">
+                    <label for="menu-toggle-about" class="hamburger" aria-label="Відкрити або закрити меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
 
-                <figure class="media-card">
-                    <span class="media-badge">Навчання</span>
-                    <div class="media-placeholder media-placeholder--portrait" aria-label="Місце для особистого фото">
-                        Фото Віолетти Купрєєвої
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="index.html">Головна</a></li>
+                        <li><a class="nav-link" href="about.html" aria-current="page">Про мене</a></li>
+                        <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page-main">
+            <div class="page-main__inner">
+                <section class="hero">
+                    <article class="hero__content">
+                        <p class="hero__eyebrow">Знайомство</p>
+                        <h1 class="hero__title">Поєдную інтерес до психології користувача та frontend-розробки</h1>
+                        <p class="hero__text">
+                            Я навчаюся на 3 курсі спеціальності «Психологія» та паралельно вивчаю frontend.
+                            Мені цікаво створювати сторінки, які не лише коректно побудовані технічно,
+                            а й зручні, логічні та комфортні для користувача.
+                        </p>
+
+                        <div class="hero__stats" aria-label="Основні факти">
+                            <div class="stat-card">
+                                <strong>Освіта</strong>
+                                <span>3 курс спеціальності «Психологія»</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>Напрям</strong>
+                                <span>Frontend та адаптивна верстка</span>
+                            </div>
+                            <div class="stat-card">
+                                <strong>Інтерес</strong>
+                                <span>UX, структура та сприйняття інформації</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <aside class="hero__media" aria-label="Візуальний блок сторінки про мене">
+                        <figure class="profile-figure">
+                            <img src="https://placehold.co/800x1000/dbeafe/1e293b?text=About+Me" alt="Стилізоване зображення для сторінки про Віолетту Купрєєву">
+                            <figcaption class="figure-caption">Візуальний блок для сторінки «Про мене» з адаптивним зображенням.</figcaption>
+                        </figure>
+
+                        <blockquote class="quote">
+                            «Хороший інтерфейс має бути не лише красивим, а й психологічно зрозумілим для людини».
+                        </blockquote>
+                    </aside>
+                </section>
+
+                <section class="section">
+                    <div>
+                        <p class="section__eyebrow">Освіта та розвиток</p>
+                        <h2 class="section-title">Що я вивчаю зараз</h2>
                     </div>
-                    <figcaption class="media-overlay">Особисте фото та натхнення для розвитку у frontend</figcaption>
-                </figure>
-            </section>
 
-            <section class="content-section">
-                <div class="info-card">
-                    <h2 class="section-title">Освіта та розвиток</h2>
-                    <article>
-                        <h3>Освіта</h3>
-                        <p>Навчаюся на 3 курсі та паралельно самостійно вивчаю основи веб-розробки.</p>
-                    </article>
+                    <div class="projects-grid">
+                        <article class="skill-card">
+                            <h3>Семантичний HTML</h3>
+                            <p>Працюю над правильною структурою сторінок, використанням semantic tags і покращенням доступності.</p>
+                        </article>
 
-                    <article>
-                        <h3>Інтереси</h3>
-                        <p>Поєдную знання з психології користувача з технічними навичками, щоб краще розуміти потреби людей у цифровому середовищі.</p>
-                    </article>
-                </div>
-            </section>
+                        <article class="skill-card">
+                            <h3>CSS Grid і Flexbox</h3>
+                            <p>Вивчаю сучасні способи побудови макетів, адаптивні сітки та гнучке вирівнювання контенту.</p>
+                        </article>
 
-            <section class="content-section">
-                <div class="info-card">
-                    <h2 class="section-title">Мої технічні навички</h2>
+                        <article class="skill-card">
+                            <h3>Git та GitHub</h3>
+                            <p>Закріплюю навички роботи з репозиторіями, комітами та публікацією навчальних проєктів.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section section--accent">
+                    <div>
+                        <p class="section__eyebrow">Навички</p>
+                        <h2 class="section-title">Мої технічні навички</h2>
+                    </div>
+
                     <div class="table-wrapper">
                         <table>
                             <caption>Таблиця технічних навичок</caption>
@@ -74,92 +120,108 @@
                             <tbody>
                                 <tr>
                                     <td>HTML</td>
-                                    <td>Початковий</td>
-                                    <td>1 місяць</td>
+                                    <td>Початковий / базовий</td>
+                                    <td>Навчальні роботи</td>
+                                </tr>
+                                <tr>
+                                    <td>CSS</td>
+                                    <td>Початковий / базовий</td>
+                                    <td>Grid, Flexbox, адаптивність</td>
                                 </tr>
                                 <tr>
                                     <td>Git</td>
                                     <td>Початковий</td>
-                                    <td>Кілька тижнів</td>
-                                </tr>
-                                <tr>
-                                    <td>Семантична розмітка</td>
-                                    <td>Базовий</td>
-                                    <td>У процесі вивчення</td>
+                                    <td>Коміти та публікація проєктів</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="content-section">
-                <div class="info-card">
-                    <h2 class="section-title">Факти про мене</h2>
-                    <dl>
-                        <dt>Улюблений напрям</dt>
-                        <dd>Створення зрозумілих і логічних інтерфейсів.</dd>
-
-                        <dt>Мета</dt>
-                        <dd>Розвиватися як frontend-розробник і створювати корисні веб-рішення.</dd>
-
-                        <dt>Сильна сторона</dt>
-                        <dd>Уважність до структури та зручності подання інформації.</dd>
-                    </dl>
-                </div>
-            </section>
-
-            <section class="content-section">
-                <div class="info-card">
-                    <h2 class="section-title">Мої фото</h2>
-                    <div class="gallery-grid">
-                        <div class="media-card">
-                            <span class="media-badge">Фото</span>
-                            <figure>
-                                <div class="media-placeholder media-placeholder--portrait" aria-label="Місце для особистого фото">
-                                    Особисте фото
-                                </div>
-                                <figcaption class="media-overlay">Особисте фото</figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="media-card">
-                            <span class="media-badge">Робоче місце</span>
-                            <figure>
-                                <div class="media-placeholder media-placeholder--portrait" aria-label="Місце для фото робочого місця">
-                                    Моє робоче місце
-                                </div>
-                                <figcaption class="media-overlay">Моє робоче місце</figcaption>
-                            </figure>
-                        </div>
+                <section class="section">
+                    <div>
+                        <p class="section__eyebrow">Факти</p>
+                        <h2 class="section-title">Що для мене важливо у веброзробці</h2>
                     </div>
-                </div>
-            </section>
 
-            <section class="content-section">
-                <div class="info-card media-card">
-                    <h2 class="section-title">Аудіо для роботи</h2>
-                    <figure>
-                        <div class="media-placeholder media-placeholder--wide" aria-label="Місце для аудіо">
-                            Аудіо для роботи буде додано пізніше
+                    <dl class="facts-list">
+                        <div>
+                            <dt><strong>Улюблений напрям</strong></dt>
+                            <dd>Створення зрозумілих, логічних і візуально чистих інтерфейсів.</dd>
                         </div>
-                        <figcaption>Музика, яку я слухаю під час навчання та роботи</figcaption>
-                    </figure>
-                </div>
-            </section>
+                        <div>
+                            <dt><strong>Мета</strong></dt>
+                            <dd>Розвиватися як frontend-розробник і створювати зручні цифрові рішення.</dd>
+                        </div>
+                        <div>
+                            <dt><strong>Сильна сторона</strong></dt>
+                            <dd>Уважність до структури, подання інформації та досвіду користувача.</dd>
+                        </div>
+                    </dl>
+                </section>
 
-            <aside class="side-note">
-                <h2 class="section-title">Цікавий факт</h2>
-                <p>Я вважаю, що хороша веб-сторінка має бути не лише правильно побудованою технічно, а й психологічно комфортною для користувача.</p>
-            </aside>
-        </div>
-    </main>
+                <section class="section">
+                    <div>
+                        <p class="section__eyebrow">Галерея</p>
+                        <h2 class="section-title">Візуальні блоки портфоліо</h2>
+                        <p class="section__text">
+                            Ці картки ілюструють приклад адаптивної сітки з автоматичним перелаштуванням
+                            без додаткових media queries.
+                        </p>
+                    </div>
 
-    <footer class="site-footer">
-        <div class="content-shell">
-            <p>&copy; 2026 Віолетта Купрєєва. Всі права захищені.</p>
-        </div>
-    </footer>
+                    <div class="projects-grid">
+                        <figure class="project-card">
+                            <img src="https://placehold.co/800x1000/e2e8f0/1e293b?text=Personal+Photo" alt="Стилізоване особисте фото для портфоліо">
+                            <figcaption class="project-card__meta">Візуальний блок «Особисте фото» для сторінки портфоліо.</figcaption>
+                        </figure>
+
+                        <figure class="project-card">
+                            <img src="https://placehold.co/800x1000/cffafe/1e293b?text=Workspace" alt="Стилізоване зображення робочого місця">
+                            <figcaption class="project-card__meta">Візуальний блок «Робоче місце» як частина навчальної галереї.</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <aside class="page-sidebar">
+            <div class="page-sidebar__inner">
+                <section class="sidebar-card" aria-labelledby="about-sidebar-goal">
+                    <h2 class="sidebar-card__title" id="about-sidebar-goal">Моя мета</h2>
+                    <p>
+                        Розвивати навички frontend-розробки та навчитися створювати сайти,
+                        які одночасно красиві, структуровані та зручні для людей.
+                    </p>
+                </section>
+
+                <section class="sidebar-card" aria-labelledby="about-sidebar-interests">
+                    <h2 class="sidebar-card__title" id="about-sidebar-interests">Мої інтереси</h2>
+                    <ul class="skill-list">
+                        <li>Психологія користувача</li>
+                        <li>Інформаційна архітектура</li>
+                        <li>Сучасний CSS</li>
+                        <li>Навчальні вебпроєкти</li>
+                    </ul>
+                </section>
+
+                <section class="sidebar-card" aria-labelledby="about-sidebar-links">
+                    <h2 class="sidebar-card__title" id="about-sidebar-links">Корисні переходи</h2>
+                    <ul>
+                        <li><a class="nav-link" href="index.html">Повернутися на головну</a></li>
+                        <li><a class="nav-link" href="contacts.html">Перейти до контактів</a></li>
+                        <li><a class="nav-link" href="#top">До початку сторінки</a></li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
+
+        <footer class="site-footer">
+            <div class="container site-footer__inner">
+                <p>&copy; 2026 Віолетта Купрєєва. Сторінка «Про мене» для адаптивного портфоліо.</p>
+            </div>
+        </footer>
+    </div>
 
     <a class="back-to-top" href="#top" aria-label="Повернутися нагору">↑</a>
 </body>
